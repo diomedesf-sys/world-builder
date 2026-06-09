@@ -1,8 +1,8 @@
 import React from 'react';
-import type { PrimitiveProps, Posture } from '../../types';
+import type { PrimitiveProps } from '../../types';
 import { BaseSVG } from '../primitives/BaseSVG';
 
-const POSTURE_PATHS: Record<string, JSX.Element> = {
+const POSTURE_PATHS: Record<string, React.ReactElement> = {
     // 1. Neutral / Equilibrium: Arms down
     state1: <path d="M50 30 L50 70 M50 40 L30 60 M50 40 L70 60 M50 70 L30 100 M50 70 L70 100" strokeWidth="4" strokeLinecap="round" />,
     // 2. Arms Wavy? (Based on image 2)

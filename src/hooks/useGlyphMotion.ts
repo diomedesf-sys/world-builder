@@ -1,5 +1,5 @@
-import { useCurrentFrame, useVideoConfig, spring, interpolate, Easing } from 'remotion';
-import { MotionConfig, PrimitiveProps } from '../types';
+import { useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
+import type { MotionConfig, PrimitiveProps } from '../types';
 
 export const useGlyphMotion = (motion: MotionConfig | undefined, startTime: number, duration: number) => {
     const frame = useCurrentFrame();
